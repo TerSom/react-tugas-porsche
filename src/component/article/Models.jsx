@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "boxicons/css/boxicons.min.css";
 
 const Models = () => {
+  const [cart, Setcart] = useState(0);
+
+  const addCart = () => {
+    Setcart(cart + 1);
+  };
+
   return (
     <section className="bg-white">
       <div className="container mx-auto flex items-center h-32">
         <p className="font-bold text-5xl">Models</p>
+        <i class="bx bx-cart text-4xl ml-[90%] cursor-pointer"></i>
+        <p className="ml-2 cursor-pointer">{cart}</p>
       </div>
       <div className="flex justify-center">
         <div className="max-w-[1920px] bg-white flex flex-wrap justify-center w-screen ">
@@ -26,6 +34,13 @@ const Models = () => {
                 <button className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors">
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
+                </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
                 </button>
               </div>
             </div>
@@ -48,6 +63,13 @@ const Models = () => {
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
                 </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
+                </button>
               </div>
             </div>
           </div>
@@ -68,6 +90,13 @@ const Models = () => {
                 <button className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors">
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
+                </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
                 </button>
               </div>
             </div>
@@ -90,6 +119,13 @@ const Models = () => {
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
                 </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
+                </button>
               </div>
             </div>
           </div>
@@ -111,6 +147,13 @@ const Models = () => {
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
                 </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
+                </button>
               </div>
             </div>
           </div>
@@ -131,6 +174,13 @@ const Models = () => {
                 <button className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors">
                   <i className="bx bx-chevron-right text-4xl "></i>
                   <span>All Models</span>
+                </button>
+                <button
+                  onClick={addCart}
+                  className="flex items-center px-4 py-2 border border-white text-white hover:text-red-600 hover:border-red-600 transition-colors"
+                >
+                  <i className="bx bx-chevron-right text-4xl "></i>
+                  <span>Add to Cart</span>
                 </button>
               </div>
             </div>
