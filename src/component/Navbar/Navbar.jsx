@@ -15,6 +15,9 @@ const Navbar = () => {
         <div className="flex mx-auto justify-center">
           <h1 className="porsche text-3xl cursor-pointer mr-5 ri">PORSCHE</h1>
         </div>
+        <di className="text-xl hover:text-red-700">
+          <a href="/test-porche/">Log out</a>
+        </di>
       </div>
     </nav>
   );

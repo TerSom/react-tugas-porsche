@@ -12,7 +12,7 @@ const Models = () => {
     <section className="bg-white">
       <div className="container mx-auto flex items-center h-32">
         <p className="font-bold text-5xl">Models</p>
-        <i class="bx bx-cart text-4xl ml-[90%] cursor-pointer"></i>
+        <i className="bx bx-cart text-4xl ml-[90%] cursor-pointer"></i>
         <p className="ml-2 cursor-pointer">{cart}</p>
       </div>
       <div className="flex justify-center">
